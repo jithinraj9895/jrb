@@ -51,7 +51,7 @@ a:hover{
 
 section{
     padding-top: 4vh;
-    height: 96vh;
+    height: 50vh;
 }
 .section_text_p1, .title{
     text-align: center;
@@ -80,4 +80,29 @@ section{
     background: cadetblue;
     transform: rotate(360deg);
     border-radius: 5rem;
+}
+
+.project_sect{
+    padding-top: 2rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    font-size: smaller;
+    flex-direction: column;
+}
+
+
+.project_sect_container{
+    display: flex;
+    justify-content: space-around;
+    padding: 0rem 3rem 3rem 3rem;
+}
+
+.contact_sect{
+    padding-top: 2rem;
+    background-color: rgb(215, 233, 250);
+    display: flex;
+    justify-content: space-around;
+    font-size: smaller;
+    flex-direction: column;
 }
