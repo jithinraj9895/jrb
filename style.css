@@ -76,6 +76,8 @@ section{
 }
 
 .resume_btn:hover{
+    color: white;
+    background: cadetblue;
     transform: rotate(360deg);
     border-radius: 5rem;
 }
