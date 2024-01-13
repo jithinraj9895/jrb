@@ -19,7 +19,7 @@ p{
 
 /* Transition */
 
-a, .btn{
+a, .btn, .resume_btn{
     transition: all 300ms ease;
 }
 
@@ -57,14 +57,14 @@ section{
     text-align: center;
 }
 
-.btn_wrapper{
+.resume_btn_wrapper{
     padding-top: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn{
+.resume_btn{
     background: #dddd;
     border-radius: 3rem;
     border: none;
@@ -75,7 +75,7 @@ section{
     height: 6rem;
 }
 
-.btn:hover{
+.resume_btn:hover{
     transform: rotate(360deg);
     border-radius: 5rem;
 }
