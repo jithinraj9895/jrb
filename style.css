@@ -47,7 +47,6 @@ a{
 
 a:hover{
     color: rgb(223, 80, 80);
-    transform: rotate(180deg);
 }
 
 section{
@@ -56,4 +55,27 @@ section{
 }
 .section_text_p1, .title{
     text-align: center;
+}
+
+.btn_wrapper{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    background: #dddd;
+    border-radius: 3rem;
+    border: none;
+    padding: 1rem 1rem;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    width: 6rem;
+    height: 6rem;
+}
+
+.btn:hover{
+    transform: rotate(360deg);
+    border-radius: 5rem;
 }
