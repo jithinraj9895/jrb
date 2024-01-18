@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 </head>
 <body>
     <nav id="desktop-nav">
@@ -56,41 +54,13 @@
                 <p>linkedin.com/jrb9895</p>
             </div>
         </div>
-        
-        <div class="arjs-loader">
-            <div>Loading, please wait...</div>
-          </div>
-          <a-scene
-            vr-mode-ui="enabled: false;"
-            renderer="logarithmicDepthBuffer: true;"
-            embedded
-            arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-          >
-            <!-- we use cors proxy to avoid cross-origin problems -->
-        
-            <!--
-              ⚠️⚠️⚠️
-              https://arjs-cors-proxy.herokuapp.com/ is now offline, Heroku has dismissed all his free plans from November 2022.
-              You need to host your own proxy and use it instead. The proxy is based on CORS Anywhere (see https://github.com/Rob--W/cors-anywhere).
-              ⚠️⚠️⚠️
-            -->
-        
-            <a-nft
-              type="nft"
-              url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/trex-image/trex"
-              smooth="true"
-              smoothCount="10"
-              smoothTolerance=".01"
-              smoothThreshold="5"
-            >
-              <a-entity
-                gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-                scale="5 5 5"
-                position="50 150 0"
-              >
-              </a-entity>
-            </a-nft>
-            <a-entity camera></a-entity>
+    </section>
+
+    <section id="vr-container">
+        <a-scene>
+            <!-- Your A-Frame VR scene content goes here -->
+            <a-box position="0 1.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+            <a-sky color="#ECECEC"></a-sky>
           </a-scene>
     </section>
     <script src="script.js"></script>
