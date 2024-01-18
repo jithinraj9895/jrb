@@ -106,3 +106,22 @@ section{
     font-size: smaller;
     flex-direction: column;
 }
+
+.arjs-loader {
+    height: 50%;
+    width: 50%;
+    position: sticky;
+    top: 150vh;
+    left: 50vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .arjs-loader div {
+    text-align: center;
+    font-size: 1.25em;
+    color: white;
+  }
