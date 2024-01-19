@@ -1,2 +1,2 @@
 # jrb
-basic portfolio site
+basic portfolio site with A-frame VR implementation
