@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        height: 5rem;
+        top: 0px;
+        position: sticky;
+        background-color: aliceblue;
+    }
+
+    #profile{
+        height: 60vh;
+    }
+
+    #about{
+        height: 520px;
+        flex-direction: column;
+    }
+
+    #projects{
+        height: 600px;
+    }
+
+
+    .project_sect_container{
+        flex-direction: column;
+    }
+
+    .photo{
+        height: 200px;
+        width: 200px;
+    }
+}
