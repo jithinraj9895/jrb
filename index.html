@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
 </head>
@@ -14,13 +16,14 @@
         <div class ="logo">JRB</div>
         <div>
             <ul class="nav-links">
-                <li><a href="#projects"><i class="fa fa-database" aria-hidden="true"></i></a></li>
-                <li><a href="#experience"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
-                <li><a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i></a></li>
+                <li><a href="#projects"><i class="fa fa-database" aria-hidden="true"></i> Projects</a></li>
+                <li><a href="#experience"><i class="fa fa-cogs" aria-hidden="true"></i> Tech</a></li>
+                <li><a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i>  Contacts</a></li>
             </ul>
         </div>
     </nav>
-    <section id="profile">
+    <div class="section-container">
+        <section id="profile">
             <div class="section_text">
                 <p class="section_text_p1">Hello World, I'm</p>
                 <h1 class="title">Jithinraj Badi</h1>
@@ -31,40 +34,57 @@
                     </a>
                 </div>
             </div>
-    </section>
-    <section id="projects">
-        <div class="project_sect">
-            <h1 class="title">PROJECTS</h1>
-            <br>
-            <p class="section_text_p1">Web Application</p>
-            <div class="project_sect_container">
-                <ul>
-                    <li>Enhanced user functionality by adding multiple features to the existing web application.</li>
-                    <li>Designed and implemented a robust database schema using SQL Server, optimizing queries and reducing response time by 30%. </li>
-                    <li>Developed a robust Windows service for automated letter generation, significantly enhancing operational efficiency by replacing the previous manual process conducted by auditors</li>
-                </ul>
+        </section>
+        <section id="about">
+            <div class="desc">
+                A passionate and results-driven Full Stack Developer with a strong 
+                foundation in .NET development. I specialize in creating robust and scalable web applications.
+                While I excel in backend development using technologies like ASP.NET and C#, I'm also passionate 
+                about front-end technologies, design principles, Java web development, AR/VR etc.
             </div>
-        </div>
-        
-    </section>
-    <section id="contact">
-        <div class="contact_sect">
-            <h1 class="title">CONTACTS</h1>
-            <br>
-            <div class="project_sect_container">
-                <p>jithinraj9895@gmail.com</p>
-                <p>linkedin.com/jrb9895</p>
+            <div class="photo">
+                <img src="./assets/idea.png" alt="hello" width="250" height="250">
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="projects">
+            <div class="project_sect">
+                <h1 class="title">PROJECTS</h1>
+                <div class="project_sect_container">
+                    <div class="project-item">
+                        <h4>Alot</h4>
+                        <p>A 2d side scroller game powered by unity game engine. Made using c#</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>Sevens Webapp</h4>
+                        <p>An application for football related news made using java, springboot, mongodb and angular</p>
+                    </div>
+                    <div class="project-item">
+                        <h4>Portfolio</h4>
+                        <p>This site where I experiment with html, css javascript and some A-frame</p>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+        <section id="contact">
+            <div class="contact_sect">
+                <h1 class="title">CONTACTS</h1>
+                <br>
+                <div class="project_sect_container">
+                    <p>jithinraj9895@gmail.com</p>
+                    <p>linkedin.com/jrb9895</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="vr-container">
-        <a-scene embedded>
-            <!-- Your A-Frame VR scene content goes here -->
-            <a-box position="0 1.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-            <a-sky color="#ECECEC"></a-sky>
-          </a-scene>
-    </section>
+        <section id="vr-container">
+            <a-scene embedded>
+                <!-- Your A-Frame VR scene content goes here -->
+                <a-box position="0 1.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+                <a-sky color="#ECECEC"></a-sky>
+            </a-scene>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
