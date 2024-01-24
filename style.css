@@ -21,6 +21,7 @@ p{
 
 a, .btn, .resume_btn{
     transition: all 300ms ease;
+    text-decoration: none;
 }
 
 /* nav */
@@ -82,29 +83,51 @@ section{
     border-radius: 5rem;
 }
 
-.project_sect{
-    padding-top: 2rem;
+
+#projects{
     background-color: aliceblue;
-    display: flex;
-    justify-content: space-around;
-    font-size: smaller;
-    flex-direction: column;
 }
 
 
 .project_sect_container{
     display: flex;
     justify-content: space-around;
-    padding: 0rem 3rem 3rem 3rem;
+    padding: 2rem 3rem 3rem 3rem;
+    gap: 2rem;
 }
 
-.contact_sect{
-    padding-top: 2rem;
-    background-color: rgb(215, 233, 250);
+.project-item{
+    justify-items: center;
+    padding: 1rem;
+    border: 3px solid rgb(243, 192, 192);
+    border-radius: 2rem;
+}
+
+#about{
+    background-color: rgb(243, 245, 255);
+    padding: 3rem;
+    gap: 3rem;
+    align-items: center;
     display: flex;
     justify-content: space-around;
-    font-size: smaller;
-    flex-direction: column;
+}
+
+.desc{
+    text-align:justify;
+}
+.photo{
+    padding: 2rem;
+    border: .5rem solid rgb(70, 64, 64);
+    border-radius: 2rem;
+}
+
+
+
+#contact{
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    background-color: antiquewhite;
 }
 
 
