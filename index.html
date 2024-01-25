@@ -80,11 +80,51 @@
         <section id="vr-container">
             <a-scene embedded>
                 <!-- Your A-Frame VR scene content goes here -->
+                 <a-entity id="camera" camera look-controls wasd-controls horizontal-look position="0 1.6 5" rotation="0 180 0"></a-entity>
+
                 <a-box position="0 1.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
                 <a-sky color="#ECECEC"></a-sky>
             </a-scene>
         </section>
     </div>
     <script src="script.js"></script>
+     <script>
+        AFRAME.registerComponent('horizontal-look', {
+                init: function () {
+                    // Set initial rotation values
+                    this.yawObject = new THREE.Object3D();
+                    this.yawObject.rotation.y = 0;
+
+                    // Attach the yaw object to the camera
+                    this.el.object3D.add(this.yawObject);
+
+                    // Disable pitch and roll by setting parent rotation
+                    this.el.object3D.rotation.x = 0;
+                    this.el.object3D.rotation.z = 0;
+
+                    // Register the tick function for continuous updates
+                    this.el.sceneEl.addEventListener('enter-vr', this.onEnterVR.bind(this));
+                    this.el.sceneEl.addEventListener('exit-vr', this.onExitVR.bind(this));
+                    this.el.addEventListener('loaded', this.onLoaded.bind(this));
+                },
+
+                onLoaded: function () {
+                    // Set initial rotation values
+                    this.yawObject.rotation.y = 0;
+                    this.el.object3D.rotation.x = 0;
+                    this.el.object3D.rotation.z = 0;
+                },
+
+                onEnterVR: function () {
+                    // Reset rotation when entering VR mode
+                    this.onLoaded();
+                },
+
+                onExitVR: function () {
+                    // Reset rotation when exiting VR mode
+                    this.onLoaded();
+                }
+            });
+    </script>
 </body>
 </html>
