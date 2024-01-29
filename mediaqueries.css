@@ -1,4 +1,13 @@
 @media screen and (max-width: 600px) {
+
+    .title{
+        font-size: 3rem;
+    }
+
+    .Main-title p{
+        font-size: 1.5rem;
+    }
+
     .section-container{
         display: flex;
         flex-direction: column;
@@ -14,7 +23,7 @@
     }
 
     #profile{
-        height: 60vh;
+        height: 70vh;
     }
 
     #about{
