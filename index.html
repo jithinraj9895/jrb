@@ -25,9 +25,11 @@
     <div class="section-container">
         <section id="profile">
             <div class="section_text">
-                <p class="section_text_p1">Hello World, I'm</p>
-                <h1 class="title">Jithinraj Badi</h1>
-                <h3 class="title">A Developer</h1>
+                <div class="Main-title">
+                    <p class="section_text_p1">Hello World, I'm</p>
+                    <h1 class="title">Jithinraj Badi</h1>
+                    <h3 class="title">A Developer</h1>
+                </div>
                 <div class="resume_btn_wrapper">
                     <a href="res.pdf" download="res">
                         <button class="resume_btn" type="button">Resume</button>
@@ -80,51 +82,15 @@
         <section id="vr-container">
             <a-scene embedded>
                 <!-- Your A-Frame VR scene content goes here -->
-                 <a-entity id="camera" camera look-controls wasd-controls horizontal-look position="0 1.6 5" rotation="0 180 0"></a-entity>
-
-                <a-box position="0 1.6 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+                <a-sphere color="#EEE" 
+                position="-1 1.6 -4" radius="2" 
+                material="src: url(./assets/globe.jpg)"
+                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 15000" easing: easeInOutQuad></a-sphere>
                 <a-sky color="#ECECEC"></a-sky>
             </a-scene>
         </section>
+
     </div>
     <script src="script.js"></script>
-     <script>
-        AFRAME.registerComponent('horizontal-look', {
-                init: function () {
-                    // Set initial rotation values
-                    this.yawObject = new THREE.Object3D();
-                    this.yawObject.rotation.y = 0;
-
-                    // Attach the yaw object to the camera
-                    this.el.object3D.add(this.yawObject);
-
-                    // Disable pitch and roll by setting parent rotation
-                    this.el.object3D.rotation.x = 0;
-                    this.el.object3D.rotation.z = 0;
-
-                    // Register the tick function for continuous updates
-                    this.el.sceneEl.addEventListener('enter-vr', this.onEnterVR.bind(this));
-                    this.el.sceneEl.addEventListener('exit-vr', this.onExitVR.bind(this));
-                    this.el.addEventListener('loaded', this.onLoaded.bind(this));
-                },
-
-                onLoaded: function () {
-                    // Set initial rotation values
-                    this.yawObject.rotation.y = 0;
-                    this.el.object3D.rotation.x = 0;
-                    this.el.object3D.rotation.z = 0;
-                },
-
-                onEnterVR: function () {
-                    // Reset rotation when entering VR mode
-                    this.onLoaded();
-                },
-
-                onExitVR: function () {
-                    // Reset rotation when exiting VR mode
-                    this.onLoaded();
-                }
-            });
-    </script>
 </body>
 </html>
