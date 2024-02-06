@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&display=swap');
 
 *{
     margin: 0;
@@ -8,7 +9,7 @@
 }
 
 body{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 html{
@@ -28,6 +29,12 @@ html{
     font-size: 5rem;
 }
 
+.title2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    color: #D76F30;
+    font-weight: 200;
+}
 .Main-title p {
     animation: show 5s ease;
 }
