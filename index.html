@@ -28,7 +28,7 @@
                 <div class="Main-title">
                     <p class="section_text_p1">Hello World, I'm</p>
                     <h1 class="title">Jithinraj Badi</h1>
-                    <h3 class="title">{Developer}</h1>
+                    <h3 class="title2">{Developer}</h3>
                 </div>
                 <div class="resume_btn_wrapper">
                     <a href="res.pdf" download="res">
@@ -104,11 +104,15 @@
 
         <section id="vr-container">
             <a-scene embedded>
+                <a-assets>
+                    <img id="my-image" src="assets/html.png">
+                  </a-assets>
                 <!-- Your A-Frame VR scene content goes here -->
                 <a-sphere color="#EEE" 
                 position="-1 1.6 -4" radius="2" 
                 material="src: url(./assets/globe.jpg)"
                 animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 15000" easing: easeInOutQuad></a-sphere>
+                
                 <a-sky color="white"></a-sky>
                 
             </a-scene>
