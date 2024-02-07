@@ -132,7 +132,7 @@ section{
 
 .resume_btn:hover{
     color: white;
-    background: rgb(249, 82, 82);
+    background: #F67280;
     transform: rotate(360deg);
     border-radius: 7rem;
 }
@@ -189,7 +189,7 @@ section{
 }
 
 .fa-rotate{
-    animation: rotate 120s linear infinite;
+    animation: rotate 30s linear infinite;
 }
 
 
@@ -216,4 +216,3 @@ section{
     height: 100%;
   }
 
- 
