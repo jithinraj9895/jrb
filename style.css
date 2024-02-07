@@ -177,11 +177,20 @@ section{
     font-size: 16px;
 }
 .photo{
-    padding: 2rem;
-    border: .5rem solid rgb(70, 64, 64);
-    border-radius: 2rem;
+    border-radius: 3rem;
+    color: #C06C84;
+    font-size: 5rem;
+    padding: 3rem;
 }
 
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.fa-rotate{
+    animation: rotate 120s linear infinite;
+}
 
 
 #contact{
@@ -205,4 +214,35 @@ section{
   a-scene {
     width: 100%;
     height: 100%;
+  }
+
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent white background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* make sure it's on top of everything */
+  }
+  
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .section-container{
+      display: none;
   }
