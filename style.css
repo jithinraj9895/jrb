@@ -34,6 +34,19 @@ html{
     font-size: 5rem;
 }
 
+#textLoop{
+    text-align: center;
+    font-size: 5rem;
+    animation: changeText 3s infinite; /* Change text every 6 seconds */
+}
+
+/* Define keyframes for the animation */
+@keyframes changeText {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+
 .title2{
     font-family: 'Sacramento', cursive;
     font-size: 2rem;
@@ -188,6 +201,11 @@ section{
     100%{transform: rotate(360deg);}
 }
 
+.not_in_phone{
+    font-size: x-small;
+    color: #000000;
+}
+
 .fa-rotate{
     animation: rotate 30s linear infinite;
 }
@@ -216,3 +234,19 @@ section{
     height: 100%;
   }
 
+
+  .images{
+      /*animation: moveAround 2s ease-out infinite;*/
+  }
+
+  @keyframes moveAround{
+      0%{transform: translate(0px,0px);}
+      100%{transform: translate(100px,100px);}
+  }
+
+  @keyframes changeText {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+ 
