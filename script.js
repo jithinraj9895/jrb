@@ -1,4 +1,3 @@
-debugger;
 const textLoopElement = document.getElementById('textLoop');
 const texts = ['TECH!', 'DESIGN!', 'ART!'];
 let index = 0;
