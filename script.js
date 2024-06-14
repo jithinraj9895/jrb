@@ -43,7 +43,12 @@ function themeChange(){
 }
 
 const h1 = document.getElementById('name');
-    
+const h1 = document.getElementById('name');
+const newBackground = `linear-gradient(-70deg, #d51616 0%, #c800fff5 50%)`;
+h1.style.background = newBackground;
+h1.style.webkitBackgroundClip = 'text';
+h1.style.webkitTextFillColor = 'transparent';
+
 window.onscroll = function (e) {
     console.log(window.scrollY+":Y"); // Value of scroll Y in px
     let the_y = window.scrollY;// 1 to 500 convert to 0 to 100 -- 
