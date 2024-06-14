@@ -1,7 +1,7 @@
 @media screen and (max-width: 600px) {
 
 
-    .title{
+    #name,.title{
         font-size: 3rem;
     }
 
@@ -20,7 +20,8 @@
         height: 5rem;
         top: 0px;
         position: sticky;
-        background-color: aliceblue;
+        
+        
     }
 
     #profile{
@@ -45,7 +46,7 @@
         font-size: 3rem;
     }
 
-    .not_in_phone{
+    #not_in_phone{
         display: none;
     }
 }

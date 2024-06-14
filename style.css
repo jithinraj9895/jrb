@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
     margin: 0;
@@ -9,8 +10,13 @@
 }
 
 .logo{
-    font-family: 'Sacramento', cursive;
-    font-size:larger;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 8px;
+    text-transform: uppercase;
+    background: linear-gradient(-70deg, #d51616 0%, #c800fff5 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 body{
@@ -29,7 +35,7 @@ html{
 }
 
 
-.title{
+#name,.title{
     text-align: center;
     font-size: 5rem;
 }
@@ -77,6 +83,15 @@ a, .btn, .resume_btn{
     text-decoration: none;
 }
 
+
+i{
+    color: #6e008cf5;
+    
+}
+
+i:hover{
+    color: #d51616;
+}
 /* nav */
 
 nav, .nav-links{
@@ -89,7 +104,7 @@ nav{
     align-items: center;
     height: 10vh;
     position: sticky;
-    background-color: aliceblue;
+    background-color: rgb(216, 199, 199);
 }
 
 .nav-links{
@@ -120,8 +135,8 @@ section{
     padding-top: 4vh;
     height: 90vh;
 }
-.section_text_p1{
-    color: rgb(0, 0, 0);
+#section_text_p1{
+    color: rgb(59, 58, 59);
     font-size: 2rem;
 }
 
@@ -201,7 +216,7 @@ section{
     100%{transform: rotate(360deg);}
 }
 
-.not_in_phone{
+#not_in_phone{
     font-size: x-small;
     color: #000000;
 }

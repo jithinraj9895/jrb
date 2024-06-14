@@ -13,12 +13,13 @@
 </head>
 <body>
     <nav id="desktop-nav">
-        <div class ="logo">Jithinraj</div>
+        <div class ="logo"><h1 id="h1">JRB</h1></div>
         <div>
             <ul class="nav-links">
-                <li><a href="#projects"><i class="fa fa-database" aria-hidden="true"></i> Projects</a></li>
-                <li><a href="#tech"><i class="fa fa-cogs" aria-hidden="true"></i> Tech</a></li>
-                <li><a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i>  Contacts</a></li>
+                <li><a href="#projects"><i class="fa fa-database" aria-hidden="true"></i></a></li>
+                <li><a href="#tech"><i class="fa fa-cogs" aria-hidden="true"></i></a></li>
+                <li><a href="#contact"><i class="fa fa-address-card" aria-hidden="true"></i></a></li>
+                <li><button id="sbtn" onclick="themeChange()"><i class="fa fa-grav" aria-hidden="true"></i></button></i></li>
             </ul>
         </div>
     </nav>
@@ -26,10 +27,10 @@
         <section id="profile">
             <div class="section_text">
                 <div class="Main-title">
-                    <p class="section_text_p1">Hello World, I'm</p>
-                    <h1 class="title">Jithinraj Badi</h1>
+                    <p id="section_text_p1">Hello World, I'm</p>
+                    <h1 id="name">Jithinraj Badi</h1>
                     <h3 class="title2">{Developer}</h3>
-                    <p class="not_in_phone">  This is a VR background and you can see all of the city scapes 360 view using your phone.
+                    <p id="not_in_phone">  This is a VR background and you can see all of the city scapes 360 view using your phone.
             </p>
                 </div>
                 <div class="resume_btn_wrapper">
@@ -108,12 +109,10 @@
                     <img id="my-image" src="assets/html.png">
                   </a-assets>
                 <!-- Your A-Frame VR scene content goes here -->
-                <a-sphere color="#EEE" 
-                position="-1 1.6 -4" radius="2" 
-                material="src: url(./assets/globe.jpg)"
-                animation__rotate="property: rotation; to: 0 360 0; loop: true; dur: 15000" easing: easeInOutQuad></a-sphere>
+
                 
-                <a-sky color="white" src="assets/pexels-aleksandar-pasaric-325185.jpg" opacity="0.3"></a-sky>
+                <a-sky id="sky" color="white" position="0 2 -5" src="assets/pexels-apasaric-1694000.jpg" opacity="1" 
+                animation="property: rotation; to: 360 0 360; loop: true; dur: 650000"></a-sky>
                 
             </a-scene>
         </section>
